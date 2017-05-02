@@ -1,0 +1,10 @@
+<ul>
+    <% data.forEach(function(d) { %>
+    <li data-id=<%=d.id%>> 
+        <input class="input_item" type="text" name="first" 
+            placeholder=<%= d.first %> read-only>
+        <span class="edit">edit</span>
+        <span class="delete">delete</span>
+    </li> 
+    <% }) %>
+</ul>
